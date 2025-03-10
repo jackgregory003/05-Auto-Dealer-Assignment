@@ -4,3 +4,11 @@ header, nav, main {
 }
 
 /* NAVIGATION STUFF GOES HERE  */
+
+
+
+div.allcards {
+    section{
+        flex-basis: calc(33.333% - (($gutter*2)/3))
+    }
+}

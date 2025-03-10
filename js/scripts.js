@@ -5,4 +5,6 @@ btnElement.addEventListener('click', () => {
     btnElement.classList.toggle('open');
     navElement.classList.toggle('open');
 });
-console.log ("KYS")
+
+//grab REVIEW data from json file
+import { reviews } from;
