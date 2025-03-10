@@ -7,4 +7,4 @@ btnElement.addEventListener('click', () => {
 });
 
 //grab REVIEW data from json file
-import { reviews } from;
+import { reviews } from "../data/reviews.js";
