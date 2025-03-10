@@ -1,2 +1,8 @@
 const navElement = document.querySelector('#theNav');
-const navElement = document.querySelector('#theButton');
+const btnElement = document.querySelector('#theButton');
+
+btnElement.addEventListener('click', () => {
+    btnElement.classList.toggle('open');
+    navElement.classList.toggle('open');
+});
+console.log ("KYS")
