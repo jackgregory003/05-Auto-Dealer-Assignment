@@ -472,6 +472,20 @@ main div.allcards section a {
   border-radius: 8px;
   color: white;
 }
+main div.reviewwrapper {
+  background-color: #f7f7f7;
+  padding: 2rem 0;
+  text-align: center;
+}
+main div.reviewwrapper #cards {
+  text-align: center;
+}
+main div.reviewwrapper h3 {
+  margin: 2remm 10px 0 10px;
+  text-align: center;
+  color: 0;
+  font-weight: 700;
+}
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {

@@ -196,16 +196,24 @@ main {
   
           }
   
-  
-  
-  
       } // end allcards
 
+    div.reviewwrapper {
+        background-color: #f7f7f7;
+        padding: 2rem 0;
+        text-align: center;
 
+    #cards {
+        text-align: center;
+    }
+    h3 {
+        margin: 2remm $gutter 0 $gutter;
+        text-align: center;
+        color: 000;
+        font-weight: $boldWeight;
+    }
 
-
-
-
+}
 
 
 
