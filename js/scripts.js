@@ -25,16 +25,17 @@ const myReview = document.createElement('p')
 myReview.textContent = reviews[i].text
 
 
+for (let step = 0; step<reviews[i].stars; step++) {
+
+
 //create images for star ratings
 console.log(reviews[i].stars)
-
 const starIndicator = document.createElement('img')
 starIndicator.src = "../images/star-outline.svg"
-//for {let step = 0; step<reviews[i].stars; step++}
+mySection.appendChild(starIndicator)
 
 
-
-
+}//end of for loop
 
 
 

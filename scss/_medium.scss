@@ -1,3 +1,21 @@
+header {
+    grid-template-columns: max-content auto;
+    a {
+        color: #000; /* Change as needed */
+        text-decoration: none; /* Removes underline */
+        font-size: 3rem; /* Adjust size */
+        font-weight: bold; /* Optional */
+        padding-right: 3rem;
+        padding-top: 0;
+    }
+}
+
+
+
+
+
+
+
 /* NAVIGATION STUFF GOES HERE  */
 
 #theButton {
@@ -30,6 +48,21 @@ div.allcards {
     gap: 16px;
     section{
         flex-basis: calc(50% - ($gutter /2))
+    }
+    
+    
+}    
+
+
+div.reviewwrapper {
+    .cards{
+          display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+        flex: 1 1 calc(25% - 16px); // 4 columns, accounting for the gap
+        min-width: 250px;
+        max-width: 300px; // Optional to keep uniformity
     }
     
     

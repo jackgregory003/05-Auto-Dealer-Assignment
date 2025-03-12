@@ -320,6 +320,16 @@ body {
   min-width: 320px;
 }
 
+p {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
+ion-icon {
+  color: #e69500;
+  padding-right: 5px;
+}
+
 /* --------------------------- HEADER --------------------------- */
 #headerWrapper {
   border-bottom: 1px solid #ccc;
@@ -327,20 +337,27 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 50px auto;
-  column-gap: 10px;
+  grid-template-columns: 100px auto;
+  grid-template-rows: 100px auto;
+  column-gap: 5px;
   align-items: center;
   padding: 0.5rem 10px;
 }
-header span {
-  font-size: 1.6rem;
-  font-weight: 300;
-  color: #1d295f;
+header a {
+  color: #000; /* Change as needed */
+  text-decoration: none; /* Removes underline */
+  font-size: 1rem; /* Adjust size */
+  font-weight: bold; /* Optional */
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding-top: 4rem;
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 nav {
-  background-color: #1d295f;
+  background-color: black;
 }
 
 #theButton::before {
@@ -405,7 +422,6 @@ main p {
   line-height: 150%;
 }
 main .heroParent {
-  border: red dashed 1px;
   position: relative;
 }
 main .heroParent img {
@@ -417,15 +433,14 @@ main .heroParent p {
   position: absolute;
   margin: 0;
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 1rem;
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: #600;
-  font-size: 2rem;
+  color: black;
+  font-size: 1.5rem;
 }
 main h1 {
-  background-color: chocolate;
+  background-color: #e69500;
   margin: 0;
 }
 main div.allcards {
@@ -456,6 +471,7 @@ main div.allcards section img {
   width: 100%;
   height: auto;
   display: block;
+  position: relative;
 }
 main div.allcards section img.e2e {
   padding: 0;
@@ -472,6 +488,31 @@ main div.allcards section a {
   border-radius: 8px;
   color: white;
 }
+main div.allcards .bounce:hover img {
+  animation: myBounce 1s 1;
+}
+@keyframes myBounce {
+  0% {
+    bottom: 0px;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    bottom: 15px;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    bottom: 0px;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    bottom: 7px;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    bottom: 0px;
+    animation-timing-function: ease-out;
+  }
+}
 main div.reviewwrapper {
   background-color: #f7f7f7;
   padding: 2rem 0;
@@ -486,10 +527,14 @@ main div.reviewwrapper h3 {
   color: 0;
   font-weight: 700;
 }
+main div.reviewwrapper img {
+  max-width: 50px;
+  max-height: 50px;
+}
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #1d295f;
+  background-color: black;
 }
 
 footer {
@@ -504,6 +549,17 @@ footer a {
 }
 
 @media only screen and (min-width: 35rem) {
+  header {
+    grid-template-columns: max-content auto;
+  }
+  header a {
+    color: #000; /* Change as needed */
+    text-decoration: none; /* Removes underline */
+    font-size: 3rem; /* Adjust size */
+    font-weight: bold; /* Optional */
+    padding-right: 3rem;
+    padding-top: 0;
+  }
   /* NAVIGATION STUFF GOES HERE  */
   #theButton {
     display: none;
@@ -531,6 +587,15 @@ footer a {
   }
   div.allcards section {
     flex-basis: calc(50% - 5px);
+  }
+  div.reviewwrapper .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    flex: 1 1 calc(25% - 16px);
+    min-width: 250px;
+    max-width: 300px;
   }
 }
 @media only screen and (min-width: 64rem) {
