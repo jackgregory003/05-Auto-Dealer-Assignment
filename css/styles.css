@@ -442,6 +442,7 @@ main .heroParent p {
 main h1 {
   background-color: #e69500;
   margin: 0;
+  padding-left: 1rem;
 }
 main div.allcards {
   padding: 0 10px;
@@ -582,7 +583,7 @@ footer a {
   }
   div.allcards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    grid-template-columns: repeat(2, 1fr); /* Change to two equal columns */
     gap: 16px;
   }
   div.allcards section {
@@ -604,6 +605,11 @@ footer a {
     margin: auto;
   }
   /* NAVIGATION STUFF GOES HERE  */
+  div.allcards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Change to two equal columns */
+    gap: 16px;
+  }
   div.allcards section {
     flex-basis: calc(33.333% - 6.6666666667px);
   }

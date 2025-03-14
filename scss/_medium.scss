@@ -44,7 +44,7 @@ header {
 
 div.allcards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    grid-template-columns: repeat(2, 1fr); /* Change to two equal columns */
     gap: 16px;
     section{
         flex-basis: calc(50% - ($gutter /2))

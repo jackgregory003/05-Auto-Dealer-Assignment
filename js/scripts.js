@@ -9,7 +9,7 @@ btnElement.addEventListener('click', () => {
 });
 
 //grab REVIEW data from json file
-import { reviews } from "../data/reviews.js";
+import { reviews } from "./data/reviews.js";
 console.log(reviews);
 
 for (let i=0; i < reviews.length; i++)

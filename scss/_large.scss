@@ -8,6 +8,9 @@ header, nav, main {
 
 
 div.allcards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Change to two equal columns */
+    gap: 16px;
     section{
         flex-basis: calc(33.333% - (($gutter*2)/3))
     }
