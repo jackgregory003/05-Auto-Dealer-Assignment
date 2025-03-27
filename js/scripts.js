@@ -9,7 +9,7 @@ btnElement.addEventListener('click', () => {
 });
 
 //grab REVIEW data from json file
-import { reviews } from "./data/reviews.js";
+import { reviews } from "../data/reviews.js";
 console.log(reviews);
 
 for (let i=0; i < reviews.length; i++)
@@ -31,7 +31,7 @@ for (let step = 0; step<reviews[i].stars; step++) {
 //create images for star ratings
 console.log(reviews[i].stars)
 const starIndicator = document.createElement('img')
-starIndicator.src = "../images/star-outline.svg"
+starIndicator.src = "./images/star-outline.svg"
 mySection.appendChild(starIndicator)
 
 
